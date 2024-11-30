@@ -1,7 +1,7 @@
 
 @extends('base')
 @section('content')
- <h2>Page de cours</h2>
+ <h2>Nos cours</h2>
 <div class="container">
   <div class="items">Lundi <br> Cours de <b>Zumba</b><br>19h:00-21h:00 <div class="photo1"></div></div>
    <div class="items">Mardi<br> Cours de  <b>Pilate</b> <br>19h:30-21h:30 <div class="photo2"></div> </div>

@@ -1,10 +1,28 @@
 body{
-    background-image: url(https://www.shutterstock.com/image-photo/bright-spacious-gym-interior-modern-260nw-2497928205.jpg);
+   background-image: url(https://www.shutterstock.com/image-photo/bright-spacious-gym-interior-modern-260nw-2497928205.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;  
     width: 100%;
-    height: 100%;
-    flex-wrap: wrap; 
+}
+.base{
+    background-color: rgba(0, 0, 0, 0.288);
+}
+/*base*/
+footer{ 
+  background-color: orange;
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+.icons{
+    float: right;
+    margin-top: -18px;
+    margin-left: 10px;
+    margin-right: 50px;
 }
 .flex {
     width: 100%;
@@ -12,7 +30,9 @@ body{
     justify-content: space-around;
     background-color:orange;
     padding: 13px;
-    border: 2px dashed black; 
+    margin-right: -30px;
+    margin-left: -10px;  
+    margin-top: -10px;
 }
 a{
     font-weight: bold;
@@ -20,16 +40,14 @@ a{
     color: black;
     text-decoration: none;      
 }
-.cours{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
+
  /*la page tarifs*/
+ 
 .tarifs1{
     display: flex;
     justify-content: space-around;
     margin-top: 55px;
+   
 }
 .tarifs2{
     display: flex;
@@ -38,52 +56,89 @@ a{
     margin-left: -10px;
 }
 .tarifs1 div , .tarifs2  div{
-    background-color: orange;
-    width: 200px;
-    height: 150px;
+  background: linear-gradient(to bottom, beige, orange);
+    width: 300px;
+    height: 300px;
     text-align: center;
     font-weight: bold;
     padding: 5px;
     margin-left: 50px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    box-shadow: 5px 5px 5px orange;
+   
 }
  .tarifs1 p , .tarifs2 p {
     background-color: black;
     color: white;
     height: 50px;
     text-align: center;
-    margin-top: 5px;
+    margin-top:100px ;
  
  }
+ .tarifs1 input, .tarifs2 input{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: orange;
+    margin: auto;
+    border: none;
+    border-radius: 30%;
+ }
 /* la page d'accueil*/
+.pagaccueil{
+    display: flex; 
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.accueil>p{
+    text-align: center;
+}
 .accueil{
     background-color: rgba(244, 255, 240, 0.66);
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 375px;
     padding: 15px;
+    margin-top:55px;  
+    margin-left: 100px;
+    margin-right: 100px; 
+}
+.img1{
+   
+    background-image: url(https://contents.mediadecathlon.com/s887165/k$c1844d7e24c7668b68701214511d96c8/1800x0/3047pt2189/5002xcr4377/default.jpg?format=auto);
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
     margin-top: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.img2{
+    background-image: url(https://www.commeuncamion.com/content/uploads/2023/05/insert-09.jpg);
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .logo{
     background-image: url(https://www.shutterstock.com/image-vector/fitness-gym-logo-design-template-600w-1663692082.jpg);
-    width: 400px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-position: center;
     background-size: cover;
-   background-size: cover;
+   margin: 0 auto;
+   border-radius: 100%;
+   margin-top: -9px;
 } 
 /* le base*/
-footer{
-    margin-top: 200px;
-    background-color: orange;
-    border: 2px dashed black;
-    padding: 10px;
-    padding-bottom: 30px;
-}
 
-.icons{
-    float: right;
-    margin-top: -18px;
-    margin-left: 50px;
-}
 button{
     background-color: black;
     color: beige;
@@ -93,43 +148,67 @@ button{
     margin-top:50px;
 }
 span{
-   font-family: Bradley Hand, cursive;
-   text-shadow: 4px 4px 4px red;
-  margin-left: -50px;
+    font-family: Bradley Hand, cursive;
+    text-shadow: 4px 4px 4px red;
+    margin-left: -50px;
 }
 /* page de contact*/
 .maps{
     float: right;
-   margin-top: -400px;
-    margin-right: 300px;
-}
-.adresse{
-    background-color: orange;
-    width: 300px;
-    height: 300px;
-    margin-left: 150px;
-    letter-spacing: 3px;
-    margin-top: 30px;
-    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
 }
 .contact{
+    width: 50%;
+    background-color: orange;
+    box-sizing: border-box;
+    padding: 2px;
+    text-align: center;
+    width: 300px;
+    margin:0 auto;
+}
+.adresse{
+    display: flex;
+    flex-wrap: wrap;
+    margin:  auto;
+}
+@media screen and (max-width=600px){
+    .adresse{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    
+}
+
+.formillaire{
     width: 400px; 
     height: 400px;
     background-color: orange;
     padding: 5px;
     margin-top: 10px;
     margin-left: 400px;   
+    flex-wrap: wrap;
  }
  input , textarea{
     display: block;
  }
 
 /*page cours*/
+
 .container{
     display: flex;
    justify-content: space-around;  
    margin: auto;
    margin-top: 20px;
+   width: 100%;
+   flex-wrap: wrap;
+}
+@media screen and (max-width=600px) {
+    .container{
+        width: 25%;
+        flex-wrap: nowrap;
+    }
+    
 }
 .items{
     width: 300px;
@@ -188,12 +267,27 @@ span{
     background-repeat: no-repeat;
     margin: auto;
 }
+
+/*le titre des pages*/
 h2{
     background-color: black;
     width: 200px;
     height: 60px;
     text-align: center;
-    color: orange;
-    border-radius: 50%;
+    color: red;
+   margin: 15px auto;
     padding-top: 15px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+/*la page montion légale*/
+.montion{
+    background-color: black;
+    color: aliceblue;
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    text-align: justify;
 }
