@@ -1,6 +1,6 @@
 @extends('base')
 @section('content')
-    <h2>Page de contact</h2>
+  
     <div class="adresse">
         <div class="contact">
             <p><b>Adresse </b> : 5 Bd Louis XIV, 59800 Lille </p>
